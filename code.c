@@ -1,0 +1,2 @@
+// lucky
+obama=10
