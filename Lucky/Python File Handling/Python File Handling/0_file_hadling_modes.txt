@@ -1,0 +1,23 @@
+1. Read Modes
+
+- r (Read): Opens the file for reading only. If the file does not exist, it raises a FileNotFoundError.
+- rb (Read Binary): Opens the file for reading in binary format. This is used for non-text files like images or executable files.
+
+2. Write Modes
+
+- w (Write): Opens the file for writing only. If the file exists, it truncates the file (i.e., empties the file). If the file does not exist, it creates a new file.
+- wb (Write Binary): Opens the file for writing in binary format. Behaves like w but for binary files.
+
+3. Append Modes
+
+- a (Append): Opens the file for appending. If the file exists, the file pointer is at the end of the file, and new data will be written at the end. If the file does not exist, it creates a new file.
+- ab (Append Binary): Opens the file for appending in binary format. Behaves like a but for binary files.
+
+4. Read and Write Modes
+
+- r+ (Read and Write): Opens the file for both reading and writing. The file must exist.
+- rb+ (Read and Write Binary): Opens the file for both reading and writing in binary format. The file must exist.
+- w+ (Write and Read): Opens the file for both writing and reading. If the file exists, it truncates the file. If the file does not exist, it creates a new file.
+- wb+ (Write and Read Binary): Opens the file for both writing and reading in binary format. Behaves like w+ but for binary files.
+- a+ (Append and Read): Opens the file for both appending and reading. If the file does not exist, it creates a new file. The file pointer is at the end of the file for writing, but you can move it for reading.
+- ab+ (Append and Read Binary): Opens the file for both appending and reading in binary format. Behaves like a+ but for binary files.
