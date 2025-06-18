@@ -1,7 +1,6 @@
 
-
-# Example 7: Writing lines from a list with a loop using write()
-lines_to_write = ["Loop line 1\n", "Loop line 2\n", "Loop line 3\n"]
-with open("myfolder/test.txt", "w") as file:
-    for line in lines_to_write:
-        file.write(line)
+# Example 4: Reading an Integer from a Binary File
+with open('C:\\Users\\r41\\Desktop\\lucky\\PYTHON\\Lucky\\Python File Handling\\myfolder\\example3.bin', 'rb') as file:
+    data = file.read()
+    number = int.from_bytes(data, byteorder='big')
+    print(number)
